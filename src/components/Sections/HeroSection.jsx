@@ -1,10 +1,10 @@
 import React from 'react';
-import heroImage from '../../../assets/3dimage.png';
+import heroImage from '../../assets/3dimage.png';
 
 const HeroSection = () => {
     return (
 <div className="bg-secondary text-text-default py-18 sm:py-8 lg:py-12"> {/* Adjusted padding-top for navbar */}
-      <div className="relative isolate overflow-hidden border-2">
+      <div className="relative isolate overflow-hidden">
         <div className="mx-auto max-w-360 px-6 lg:px-8 sm:pb-0 lg:pb-0 flex flex-col lg:flex-row items-center">
           {/* Text Content Area */}
           <div className="lg:w-3/5  max-w-full lg:max-w-none lg:flex-shrink-0 lg:pr-8 text-center lg:text-left">
@@ -16,7 +16,7 @@ const HeroSection = () => {
               Yours For The Taking
             </h1>
             <p className="mt-6 text-lg font-normal text-gray-900 md:text-center lg:text-left lg:px-0 sm:px-12  ">
-              Sharpen your edge in achieving the best academic results with trusted and certified Teaching Assistants across the globe
+              Sharpen your edge in achieving the best academic results with trusted and certified Teaching Assistants.
             </p>
             <div className="mt-6 flex items-center justify-center lg:justify-start gap-x-6">
               <a

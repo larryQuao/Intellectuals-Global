@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../../../assets/membershipBg.png";
+import bgImage from "../../assets/membershipBg.png";
 
 const MemberSection = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import CountUpNumber from '../../UI/CountUpNumber';
+import CountUpNumber from '../UI/CountUpNumber';
 
 const stats = [
   { id: 1, name: 'Years of experience', value: '3+' },

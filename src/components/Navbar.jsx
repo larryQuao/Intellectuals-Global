@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom';
-import myLogo from '../../assets/logo.png'
+import myLogo from '../assets/logo.png'
 
 const navigation = [
     { name: 'About Us', href: '/about' },
-    { name: 'Services', href: '/services' },
 ];
 
 const Navbar = () => {
@@ -16,7 +15,7 @@ const Navbar = () => {
         <header className="sticky inset-x-0 top-0 z-50 bg-white border-b border-baltic-200 font-montserrat">
         <nav aria-label="Global" className="flex items-center justify-between p-2 lg:px-20 ">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               {/* <span className="sr-only">Your Company</span> */}
               <img
                 alt=""
@@ -43,9 +42,9 @@ const Navbar = () => {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="bg-baltic-950 py-3 px-6 text-white rounded-4xl text-sm/6 font-semibold hover:bg-violet-700">
+            <Link to="/register" className="bg-baltic-950 py-3 px-6 text-white rounded-4xl text-sm/6 font-semibold hover:bg-violet-700">
               Register Now !
-            </a>
+            </Link>
           </div>
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -83,12 +82,13 @@ const Navbar = () => {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
+                  <Link
+                    to="/register"
+                    onClick={() => setMobileMenuOpen(false)}
                     className="flex justify-center -mx-3 rounded-4xl px-3 py-2.5 text-base/7 font-semibold bg-gray-950 text-white hover:bg-violet-700"
                   >
                     Register Now !
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -2,18 +2,14 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import '../../../index.css'
 // If you want navigation arrows (prev/next buttons on the slider)
 // import 'swiper/css/navigation';
 // import { Pagination, Autoplay, Navigation } from 'swiper/modules'; // Add Navigation if using arrows
 import { Pagination, Autoplay } from 'swiper/modules';
-
-
-
-import imageSlide1 from '../../../assets/3dimage.png';
-import imageSlide2 from '../../../assets/3dimage.png';
-import imageSlide3 from '../../../assets/3dimage.png';
-import imageSlide4 from '../../../assets/3dimage.png';
+import imageSlide1 from '../../assets/3dimage.png';
+import imageSlide2 from '../../assets/3dimage.png';
+import imageSlide3 from '../../assets/3dimage.png';
+import imageSlide4 from '../../assets/3dimage.png';
 
 const slidesData = [
   {

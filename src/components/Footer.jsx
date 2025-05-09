@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import footerImg from "../../assets/logoWhiteBg.png";
+import footerImg from "../assets/logoWhiteBg.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,13 +24,7 @@ const Footer = () => {
               to="/about"
               className="text-md leading-6 text-white hover:text-violet-300 transition-colors"
             >
-              About
-            </Link>
-            <Link
-              to="/services"
-              className="text-md leading-6 text-white hover:text-violet-300 transition-colors"
-            >
-              Services
+              About Us
             </Link>
           </nav>
 
