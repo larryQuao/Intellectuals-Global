@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --color-violet-50: #f7f2ff;
+  --color-violet-200: #e1d4ff;
+  --color-violet-300: #ccb1ff;
+  --color-violet-100: #efe8ff;
+  --color-violet-400: #b485ff;
+  --color-violet-500: #9747ff;
+  --color-violet-600: #9330f7;
+  --color-violet-700: #851ee3;
+  --color-violet-800: #6f18bf;
+  --color-violet-900: #5b169c;
+  --color-violet-950: #390b6a;
+
+  --color-baltic-50: #f7f7f8;
+  --color-baltic-100: #efeef0;
+  --color-baltic-200: #dbd8df;
+  --color-baltic-300: #b9b7c2;
+  --color-baltic-400: #948fa1;
+  --color-baltic-500: #777285;
+  --color-baltic-600: #615c6d;
+  --color-baltic-700: #4f4b59;
+  --color-baltic-800: #43404c;
+  --color-baltic-900: #3b3941;
+  --color-baltic-950: #28262c;
+
+  --color-alto-50: #f8f8f8;
+  --color-alto-100: #f0f0f0;
+  --color-alto-200: #dedddd;
+  --color-alto-300: #d1d0d0;
+  --color-alto-400: #b6b3b3;
+  --color-alto-500: #9b9898;
+  --color-alto-600: #828080;
+  --color-alto-700: #6c6969;
+  --color-alto-800: #5b5959;
+  --color-alto-900: #4f4d4d;
+  --color-alto-950: #282727;
+
+  --font-Montserrat: "Montserrat", sans-serif;
+}
+
+.bg-image {
+  background-image: url('./assets/membershipBg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Swiper Pagination Styles */
+.swiper-pagination-bullet {
+  width: 10px;  /* Adjusted size, was 20px which is quite large */
+  height: 10px; /* Adjusted size */
+  /* Change this to your desired inactive bullet color from the @theme block */
+  background-color: var(--color-baltic-300); /* Example: A light gray */
+  opacity: 1;
+  border-radius: 50%; /* Direct CSS for a circle, replaces theme() */
+  transition: background-color 0.3s ease;
+  margin: 0 4px !important;
+}
+
+.swiper-pagination-bullet-active {
+  /* Change this to your desired active bullet color from the @theme block */
+  background-color: var(--color-violet-500); /* Example: Your primary violet */
+}
+
+.mySwiper .swiper-pagination-bullet { /* Or .swiper-pagination */
+  bottom: 0px !important; 
+}
