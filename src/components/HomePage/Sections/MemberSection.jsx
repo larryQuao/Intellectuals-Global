@@ -1,34 +1,29 @@
 import React from "react";
+import bgImage from "../../../assets/membershipBg.png";
 
 const MemberSection = () => {
   return (
-    <div className="bg-image w-full h-[420px] px-28 py-12 inline-flex flex-col justify-center items-center gap-2.5">
-      <div className="flex flex-col justify-start items-center gap-4">
-        <div className="text-center justify-start">
-          <span class="text-white text-6xl font-semibold font-['Montserrat'] leading-[64px]">
-            Join The{" "}
-          </span>
-          <span class="text-white text-6xl font-semibold font-['Montserrat'] leading-[64px]">
-            Community
-          </span>
-          <span class="text-white text-6xl font-semibold font-['Montserrat'] leading-[64px]">
-            {" "}
-            of Intellectuals
-          </span>
-        </div>
-        <div className="text-center justify-start text-white text-base font-normal font-['Montserrat'] leading-normal tracking-wide">
-          Become a member of the Intellectuals community joining our Telegram
-          Community
-        </div>
-        <div className="px-6 py-2.5 bg-Text-and-Border-Dark-Color rounded-[50px] inline-flex justify-center items-center gap-2.5">
-          <div className="text-center justify-start text-white text-base font-medium font-['Montserrat'] leading-normal tracking-tight">
-            <a
-                        href="#"
-                        className="rounded-4xl bg-baltic-950 px-6 py-3 text-sm text-white font-semibold focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-baltic-950 hover:bg-violet-700"
-                      >
-                        Join Our Community
-                      </a>
-          </div>
+    <div
+      className="w-full font-montserrat text-white flex flex-col justify-center items-center text-center bg-cover bg-left bg-no-repeat px-4 py-16 sm:py-20 md:py-28 lg:py-32"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
+      <div className="max-w-2xl lg:max-w-3xl mx-auto">
+        <h2 className="text-3xl font-semibold sm:text-4xl md:text-5xl lg:text-6xl !leading-tight">
+          {" "}
+          Join The Community of Intellectuals
+        </h2>
+        <p className="mt-4 sm:mt-6 text-base sm:text-lg text-violet-100 max-w-xl mx-auto"> 
+          Become a member of the Intellectuals community joining our Telegram Community
+        </p>
+        <div className="mt-8 sm:mt-10">
+          <a
+            href="#" // Replace with your actual Telegram community link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-baltic-950 px-8 py-3 text-sm sm:text-base font-semibold text-white shadow-lg hover:bg-baltic-800 transition-colors duration-300 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-white"
+          >
+            Join Our Community
+          </a>
         </div>
       </div>
     </div>

@@ -42,12 +42,12 @@
   --font-Montserrat: "Montserrat", sans-serif;
 }
 
-.bg-image {
+/* .bg-image {
   background-image: url('./assets/membershipBg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 /* Swiper Pagination Styles */
 .swiper-pagination-bullet {
