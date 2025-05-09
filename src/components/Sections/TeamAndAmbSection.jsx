@@ -1,33 +1,24 @@
 import React from 'react';
-
-// Placeholder data - Replace with your actual team and ambassador data and image paths
-// Example image paths assume you have images in src/assets/team/
 import teamMember1 from '../../assets/michael-dam.jpg';
-// import teamMember2 from '../../assets/team/team-member-2.jpg';
-// import teamMember3 from '../../assets/team/team-member-3.jpg';
-
-// import ambassador1 from '../../assets/team/ambassador-1.jpg';
-// ...and so on for other ambassadors
 
 const teamMembers = [
   {
     id: 1,
     name: 'Team Member Name 1',
     position: 'Team Member Position',
-    imageUrl: teamMember1, // Replace with actual import or path
-    // imageUrl: teamMember1, // Example if imported
+    imageUrl: teamMember1, 
   },
   {
     id: 2,
     name: 'Team Member Name 2',
     position: 'Team Member Position',
-    imageUrl: teamMember1, // Replace
+    imageUrl: teamMember1,
   },
   {
     id: 3,
     name: 'Team Member Name 3',
     position: 'Team Member Position',
-    imageUrl: teamMember1, // Replace
+    imageUrl: teamMember1,
   },
 ];
 
@@ -36,31 +27,31 @@ const ambassadors = [
     id: 1,
     name: 'Ambassador Name 1',
     position: 'Ambassador Position',
-    imageUrl: teamMember1, // Replace
+    imageUrl: teamMember1,
   },
   {
     id: 2,
     name: 'Ambassador Name 2',
     position: 'Ambassador Position',
-    imageUrl: teamMember1, // Replace
+    imageUrl: teamMember1,
   },
   {
     id: 3,
     name: 'Ambassador Name 3',
     position: 'Ambassador Position',
-    imageUrl: teamMember1, // Replace
+    imageUrl: teamMember1,
   },
   {
     id: 4,
     name: 'Ambassador Name 4',
     position: 'Ambassador Position',
-    imageUrl: teamMember1, // Replace
+    imageUrl: teamMember1,
   },
   {
     id: 5,
     name: 'Ambassador Name 5',
     position: 'Ambassador Position',
-    imageUrl: teamMember1, // Replace
+    imageUrl: teamMember1,
   },
 ];
 

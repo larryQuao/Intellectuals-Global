@@ -41,21 +41,8 @@ const features = [
   },
 ];
 
-const BlinkingStripes = () => {
-  return (
-    <div className="relative w-10 h-3 mb-1"> {/* Container for stripes */}
-      <span className="blinking-stripe absolute bg-violet-500 h-0.5 w-3 top-0 left-0"></span>
-      <span className="blinking-stripe animation-delay-200 absolute bg-violet-500 h-0.5 w-5 top-1.5 left-1"></span>
-      <span className="blinking-stripe animation-delay-400 absolute bg-violet-500 h-0.5 w-3 top-3 left-0.5"></span>
-    </div>
-  );
-};
-
-
 const ChooseUsSection = () => {
   return (
-    // Assuming baltic-950 is your dark background from tailwind.config.js
-    // and text-default is light/white on dark backgrounds.
     <div className="bg-baltic-950 py-8 sm:py-12 font-montserrat">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">

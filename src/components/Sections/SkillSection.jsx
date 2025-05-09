@@ -2,9 +2,6 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-// If you want navigation arrows (prev/next buttons on the slider)
-// import 'swiper/css/navigation';
-// import { Pagination, Autoplay, Navigation } from 'swiper/modules'; // Add Navigation if using arrows
 import { Pagination, Autoplay } from 'swiper/modules';
 import imageSlide1 from '../../assets/3dimage.png';
 import imageSlide2 from '../../assets/3dimage.png';
@@ -27,7 +24,7 @@ const slidesData = [
     careerDescription: "Sharpen your edge in achieving the best academic results with trusted and certified Teaching Assistants across the globe",
     trustStatement: "Collaborate on real-world data sets.",
     buttonText: "Have a Target to Reach",
-    image: imageSlide2, // Using imageSlide1 as placeholder, replace with a different image
+    image: imageSlide2,
     alt: "Target Process in Academics"
   },
   {
@@ -36,7 +33,7 @@ const slidesData = [
     careerDescription: "Craft beautiful and intuitive user experiences. Learn design principles, prototyping, and user research.",
     trustStatement: "Portfolio reviews by professional designers.",
     buttonText: "Design Your Future",
-    image: imageSlide3, // Using imageSlide1 as placeholder, replace with a different image
+    image: imageSlide3,
     alt: "UX/UI Design Career Exploration"
   },{
     id: 4,
@@ -44,18 +41,18 @@ const slidesData = [
     careerDescription: "Craft beautiful and intuitive user experiences. Learn design principles, prototyping, and user research.",
     trustStatement: "Portfolio reviews by professional designers.",
     buttonText: "Design Your Future",
-    image: imageSlide4, // Using imageSlide1 as placeholder, replace with a different image
+    image: imageSlide4,
     alt: "UX/UI Design Career Exploration"
   },
 ];
 
 
-const SkillPackSection = () => {
+const SkillSection = () => {
   return (
     <div className="py-10 sm:py-12 font-montserrat">
       <div className="mx-auto max-w-7xl px-6 lg:px-0">
         {/* Top Static Content (remains outside the slider) */}
-        <div className="max-w-3xl mx-auto text-center mb-6 lg:mb-12"> {/* Adjusted margin */}
+        <div className="max-w-3xl mx-auto text-center mb-6 lg:mb-12">
           <h2 className="text-3xl font-semibold tracking-tight text-baltic-900 sm:text-5xl lg:text-6xl">
             Skill Transformation Pack <br /> From Intellectuals
           </h2>
@@ -67,12 +64,12 @@ const SkillPackSection = () => {
         {/* Swiper Container for the "Career Explore" like slides */}
         <div className="relative">
           <Swiper
-            modules={[Pagination, Autoplay /*, Navigation */]} // Add Navigation if you want prev/next arrows
-            spaceBetween={50} // Increase space if slides feel cramped
+            modules={[Pagination, Autoplay /*, Navigation */]} 
+            spaceBetween={50}
             slidesPerView={1}
             loop={true}
             autoplay={{
-              delay: 4500, // Slightly longer delay for more content
+              delay: 4500,
               disableOnInteraction: false,
             }}
             pagination={{
@@ -80,13 +77,11 @@ const SkillPackSection = () => {
               bulletClass: 'swiper-pagination-bullet',
               bulletActiveClass: 'swiper-pagination-bullet-active',
             }}
-            // navigation // Uncomment if using Navigation module and want arrows
-            className="mySwiper pb-12" // Added pb-12 to give space for pagination dots below
+            className="mySwiper pb-12"
           >
             {slidesData.map((slide) => (
               <SwiperSlide key={slide.id}>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-10 items-center py-8"> {/* Added some padding within the slide */}
-                  {/* Text content for Career Explore */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-10 items-center py-8">
                   <div className="lg:pr-4 text-center lg:text-left">
                     <h3 className="text-3xl font-semibold tracking-tight text-baltic-900 sm:text-5xl">
                       {slide.careerTitle}
@@ -127,4 +122,4 @@ const SkillPackSection = () => {
   );
 };
 
-export default SkillPackSection;
+export default SkillSection;

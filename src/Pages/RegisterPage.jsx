@@ -1,4 +1,3 @@
-// src/Pages/RegisterPage.jsx
 import React, { useState } from 'react';
 
 const universityLevels = [
