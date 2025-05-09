@@ -5,7 +5,7 @@ import SkillSection from '../components/Sections/SkillSection';
 import ChooseUsSection from '../components/Sections/ChooseUsSection';
 import MemberSection from '../components/Sections/MemberSection';
 
-const HomePage = () => {
+const Homepage = () => {
     return (
         <div>
             <HeroSection />
@@ -17,4 +17,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default Homepage;
