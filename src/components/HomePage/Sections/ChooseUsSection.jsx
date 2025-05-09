@@ -1,4 +1,3 @@
-// src/components/HomePage/Sections/ChooseUsSection.jsx
 import React from 'react';
 import {
   DocumentTextIcon,
@@ -6,7 +5,7 @@ import {
   HomeModernIcon,
   CalendarDaysIcon,
   ArrowUpTrayIcon,
-  ArrowLongRightIcon // For "Discover more"
+  ArrowLongRightIcon
 } from '@heroicons/react/24/outline';
 
 const features = [

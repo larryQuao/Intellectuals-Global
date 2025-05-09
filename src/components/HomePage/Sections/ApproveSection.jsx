@@ -1,12 +1,11 @@
-// src/components/HomePage/Sections/StatsSection.jsx
 import React from 'react';
-import CountUpNumber from '../../UI/CountUpNumber'; // Adjust path if your UI folder is elsewhere
+import CountUpNumber from '../../UI/CountUpNumber';
 
 const stats = [
   { id: 1, name: 'Years of experience', value: '3+' },
   { id: 2, name: 'Accuracy Rate', value: '99%' },
   { id: 3, name: 'Positive Reviews', value: '300+' },
-  { id: 4, name: 'Satisfied Customer', value: '50+' }, // Corrected from 'Satisfied Customer'
+  { id: 4, name: 'Satisfied Customer', value: '50+' },
 ];
 
 const ApproveSection = () => {

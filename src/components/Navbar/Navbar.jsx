@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom';
 import myLogo from '../../assets/logo.png'
 
 const navigation = [
-    { name: 'About Us', href: '#' },
-    { name: 'Services', href: '#' },
-  ]
+    { name: 'About Us', href: '/about' },
+    { name: 'Services', href: '/services' },
+];
 
 const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="inset-x-0 top-0 z-50 bg-white border-b-1 border-baltic-300">
+        <header className="sticky inset-x-0 top-0 z-50 bg-white border-b border-baltic-200 font-montserrat">
         <nav aria-label="Global" className="flex items-center justify-between p-2 lg:px-20 ">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">

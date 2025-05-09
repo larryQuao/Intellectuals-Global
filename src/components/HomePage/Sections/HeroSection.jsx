@@ -4,7 +4,7 @@ import heroImage from '../../../assets/3dimage.png';
 const HeroSection = () => {
     return (
 <div className="bg-secondary text-text-default py-18 sm:py-8 lg:py-12"> {/* Adjusted padding-top for navbar */}
-      <div className="relative isolate overflow-hidden">
+      <div className="relative isolate overflow-hidden border-2">
         <div className="mx-auto max-w-360 px-6 lg:px-8 sm:pb-0 lg:pb-0 flex flex-col lg:flex-row items-center">
           {/* Text Content Area */}
           <div className="lg:w-3/5  max-w-full lg:max-w-none lg:flex-shrink-0 lg:pr-8 text-center lg:text-left">
@@ -32,7 +32,7 @@ const HeroSection = () => {
           </div>
 
           {/* Image Area */}
-          <div className="w-full mt-8 sm:mt-8 lg:mt-0 lg:w-1/2 lg:flex-grow lg:pl-8 flex justify-center lg:justify-center">
+          <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-2/5 xl:w-1/2 mt-8 lg:mt-0 flex justify-center lg:justify-end order-first lg:order-last">
             <img
               src={heroImage}
               alt="Teaching Assistant Platform Graduate"

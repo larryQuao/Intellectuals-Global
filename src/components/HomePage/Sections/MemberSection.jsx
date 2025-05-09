@@ -3,8 +3,8 @@ import React from "react";
 const MemberSection = () => {
   return (
     <div className="bg-image w-full h-[420px] px-28 py-12 inline-flex flex-col justify-center items-center gap-2.5">
-      <div className="w-[875px] flex flex-col justify-start items-center gap-4">
-        <div className="w-[788px] text-center justify-start">
+      <div className="flex flex-col justify-start items-center gap-4">
+        <div className="text-center justify-start">
           <span class="text-white text-6xl font-semibold font-['Montserrat'] leading-[64px]">
             Join The{" "}
           </span>
@@ -16,7 +16,7 @@ const MemberSection = () => {
             of Intellectuals
           </span>
         </div>
-        <div className="w-[665px] text-center justify-start text-white text-base font-normal font-['Montserrat'] leading-normal tracking-wide">
+        <div className="text-center justify-start text-white text-base font-normal font-['Montserrat'] leading-normal tracking-wide">
           Become a member of the Intellectuals community joining our Telegram
           Community
         </div>
