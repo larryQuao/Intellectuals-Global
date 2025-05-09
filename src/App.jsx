@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-// import Homepage from './Pages/Homepage';
-import AboutPage from './Pages/Aboutpage'; // Assuming you created these
 import RegisterPage from './Pages/RegisterPaege';
 import Home from './Pages/Home';
+import About from './Pages/About';
+
 // import ServicesPage from './pages/ServicesPage';
 // import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         {/* <Route path='/' element={<Homepage />} /> */}
         <Route path='/' element={<Home/>} />
-        <Route path='/about' element={<AboutPage/>} />
+        <Route path='/about' element={<About/>} />
         <Route path='/register' element={<RegisterPage/>} />
       </Routes>
     </main>
