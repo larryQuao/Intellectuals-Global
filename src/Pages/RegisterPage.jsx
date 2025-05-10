@@ -20,7 +20,7 @@ const programsOfStudy = [
   // Add more diploma or other programs as needed
 ];
 
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbznB8lkGadp9yzVYqwztYi--Q5Eux1kyFAM-GWnP7is_xP_MaS8tSn_h9szITEKDBYO/exec"
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxGyvEcuq_S0VckBCszvdG76LnETr1UOYu_I4UvnWp7TH9uG-WuWGOHqnFAwzEkKiV9/exec"
 
 const RegisterPage = () => {
   const [formData, setFormData] = useState({
