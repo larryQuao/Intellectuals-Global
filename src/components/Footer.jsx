@@ -26,14 +26,13 @@ const Footer = () => {
             >
               About Us
             </Link>
-          </nav>
-
-          <Link
+            <Link
               to="/privacy-policy"
               className="text-md leading-6 text-white hover:text-violet-300 transition-colors"
             >
               Privacy Policy
             </Link>
+          </nav>
         </div>
         <div className="mt-4 md:mt-8 pt-8 border-t border-baltic-700 text-center">
           <p className="text-xs sm:text-sm leading-5 text-baltic-300">

@@ -7,9 +7,7 @@ import Navbar from './components/Navbar.jsx';
 import RegisterPage from './Pages/RegisterPage.jsx';
 import Home from './Pages/Home.jsx';
 import About from './Pages/About.jsx';
-
-// import ServicesPage from './pages/ServicesPage';
-// import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import PrivacyPolicyPage from './Pages/PrivacyPolicyPage.jsx';
 
 const App = () => {
 
@@ -21,6 +19,7 @@ const App = () => {
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/register' element={<RegisterPage/>} />
+        <Route path='/privacy-policy' element={<PrivacyPolicyPage/>} />
       </Routes>
     </main>
     <Footer/>
