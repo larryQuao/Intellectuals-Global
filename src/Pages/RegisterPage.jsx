@@ -47,25 +47,61 @@ const RegisterPage = () => {
     setIsSubmitting(true);
     setSubmitMessage('');
 
-    
+    try {
+      const response = await fetch(WEB_APP_URL, {
+        method: 'POST',
+        mode: 'cors', // Handles cross-origin requests
+        cache: 'no-cache',
+        headers: {
+          // 'Content-Type': 'application/x-www-form-urlencoded', // Use if Apps Script expects this
+          'Content-Type': 'application/json', // Use if Apps Script expects JSON (like the example I gave)
+        },
+        // redirect: 'follow', // Usually not needed, Apps Script handles its redirects
+        
+        // If sending as JSON (ensure your Apps Script's doPost parses JSON):
+        body: JSON.stringify(formData),
+        
+        // If you were to send as x-www-form-urlencoded:
+        // body: new URLSearchParams(formData).toString(),
+      });
 
-    // Later, this is where we'll send data to Google Sheets
-    console.log('Form Data Submitted:', formData);
+      // Google Apps Script Web Apps often return a 302 redirect on successful POST
+      // which fetch API treats as an opaque redirect if mode is 'no-cors', or follows if 'cors'.
+      // The actual content/status might not be directly readable as JSON in all cases
+      // without more complex handling or specific Apps Script configurations.
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+      // For a simple check, we assume if it doesn't throw an error and completes, it's a success.
+      // If your Apps Script explicitly returns JSON like {"status": "success"}, then you can parse it:
+      
+      // Attempt to parse JSON response, but be ready for it not to be JSON
+      let result;
+      try {
+        result = await response.json(); // Try to parse if Apps Script returns JSON
+      } catch {
+        // If it's not JSON (e.g., simple text or HTML from redirect page), we might not have a 'status'
+        // We can check response.ok for basic success (status 200-299)
+        if (response.ok) {
+          result = { status: "success", message: "Form submitted. The Google Sheet should be updated." };
+        } else {
+          result = { status: "error", message: `Submission failed with status: ${response.status}` };
+        }
+      }
 
-    setSubmitMessage('Thank you for registering! We will be in touch shortly.');
-    setFormData({
-      fullName: '',
-      email: '',
-      phone: '',
-      universityLevel: '',
-      programOfStudy: '',
-      message: '',
-    });
-    
-    setIsSubmitting(false);
+      if (result.status === "success") {
+        setSubmitMessage('Thank you for registering! We will be in touch shortly.');
+        setFormData({ // Reset form
+          fullName: '', email: '', phone: '', universityLevel: '', programOfStudy: '', message: '',
+        });
+      } else {
+        setSubmitMessage(`An error occurred: ${result.message || 'Please try again.'}`);
+      }
+
+    } catch (error) {
+      console.error('Error submitting form to Google Apps Script:', error);
+      setSubmitMessage('An error occurred while submitting your application. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
