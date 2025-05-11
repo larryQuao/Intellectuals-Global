@@ -18,7 +18,7 @@ const MemberSection = () => {
         </p>
         <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="#" // Replace with your actual Telegram community link
+            href="https://chat.whatsapp.com/IrsgsJH1qsBHC7tW0hcH15"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block rounded-full bg-baltic-950 px-8 py-3 text-sm sm:text-base font-semibold text-white shadow-lg hover:bg-baltic-800 transition-colors duration-300 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-white"

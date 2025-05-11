@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import heroImage from '../../assets/3dimage.png';
 
 const HeroSection = () => {
@@ -19,12 +20,12 @@ const HeroSection = () => {
               Sharpen your edge in achieving the best academic results with trusted and certified Teaching Assistants.
             </p>
             <div className="mt-6 flex items-center justify-center lg:justify-start gap-x-6">
-              <a
-                href="#"
+              <Link
+                to="/register"
                 className="rounded-4xl bg-baltic-950 px-6 py-3 text-sm text-white font-semibold focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-baltic-950 hover:bg-violet-700"
               >
                 Get started
-              </a>
+              </Link>
             </div>
             <p className="mt-4 text-lg font-normal text-gray-900">
               Trusted by Universities Academic Boards
