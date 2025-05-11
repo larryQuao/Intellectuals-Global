@@ -12,7 +12,7 @@ const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="sticky inset-x-0 top-0 z-50 bg-white border-b border-baltic-200 font-montserrat">
+        <header className="sticky inset-x-0 top-0 z-50 bg-white border-b border-baltic-200 font-montserrat shadow-lg">
         <nav aria-label="Global" className="flex items-center justify-between p-2 lg:px-20 ">
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
